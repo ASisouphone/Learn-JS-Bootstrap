@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initali-scale = 1">
+    <title>Testing Bootstrap</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Changed container text to black -->
+    <style>
+        .jumbotron {
+            /*background-color: #2E2D88;*/
+            color: black;
+        }
+    </style>
+
+    <!-- Learning from Derek Banas on Youtube "Boostrap Tutorial" -->
+    <!-- Provides padding. Fluid will fill the screen -->
+    <div class="container">
+
+        <h1>Learning Bootstrap 3.3.7
+            <p>
+                <small> Login Form </small>
+                </p</h1>
+    </div>
+
+</head>
+
+<!-- Got-->
+<nav class="navbar navbar-default">
+    <div class="container">
+
+
+        <ul class="nav navbar-nav">
+            <li>
+                <a href="BootstrapBasics.html">Jumbotron + Button </a>
+            </li>
+            <li>
+                <a href="BootstrapBasics-Row-Col.html"> Rows and Cols </a>
+            </li>
+            <li class="active">
+                <a href="BootstrapBasics-Login-Form.html"> Login Form </a>
+            </li>
+            <li>
+                <a href="#"> Page 4 </a>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
+
+<body>
+
+    <!-- Login Form -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xs-6">
+
+                <h2> Login Form </h2>
+                <form action = "" method = "">
+                    <div class = "form-group">
+                        <!-- for contains the ID -->
+                        <label for = "username"> Username </label>
+                        <input type = "username" class = "form-control" id = "username"/>
+                    </div>
+                    <div class = "form-group">
+                        <label for "password"> Password </label>
+                        <input type = "password" class = "form-control" id = "password"/>
+                    </div>
+                    <div class = "form-group">
+                        <input type = "submit" id = "submit" class = "btn btn-primary" value = "Submit"/>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+</body>
+
+<footer class="page-footer">
+    <div class="container text-right ">
+        <h2>
+            <small>Alan Sisouphone</small>
+        </h2>
+    </div>
+</footer>
+
+</html>
