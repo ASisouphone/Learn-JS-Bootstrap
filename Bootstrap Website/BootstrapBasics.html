@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
+
 <head>
-  <meta charset = "UTF-8">
-  <meta http-equiv="X-UA-Compatible" content = "IE=edge">
-  <meta name = "viewport" content = "width = device-width, initali-scale = 1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width = device-width, initali-scale = 1">
   <title>Testing Bootstrap</title>
 
   <!-- Boostrap 4.1.1 does not have underlined pageheaders. Using 3.7.7 instead -->
@@ -14,103 +15,127 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   <!-- Changed container text to black -->
-<style>
-.jumbotron{
-  /*background-color: #2E2D88;*/
-  color:black;
-}
-</style>
+  <style>
+    .jumbotron {
+      /*background-color: #2E2D88;*/
+      color: black;
+    }
+
+    /* .page-footer {
+  background-color:lavender
+  
+} */
+  </style>
 
 
-    <!-- Learning from Derek Banas on Youtube "Boostrap Tutorial" -->
-    <!-- Provides padding. Fluid will fill the screen -->
-    <div class = "container">
+  <!-- Learning from Derek Banas on Youtube "Boostrap Tutorial" -->
+  <!-- Provides padding. Fluid will fill the screen -->
+  <div class="container">
 
-        <!-- <div class = "page-header"> -->
-          <h1>Learning Bootstrap 3.3.7 <p><small> Jumbotron and Buttons </small></p</h1>
+    <!-- <div class = "page-header"> -->
+    <h1>Learning Bootstrap 3.3.7
+      <p>
+        <small> Jumbotron and Buttons </small>
+        </p</h1>
         <!-- </div> -->
-        </div>
+  </div>
 
 </head>
 
+<!-- Got from https://www.w3schools.com/bootstrap/bootstrap_navbar.asp -->
+<nav class="navbar navbar-default">
+  <div class="container">
 
-<nav class = "navbar navbar-default">
-  <div class = "container">
-    <div class = "navbar-header">
-      <a class = "navbar-brand" href = "#" > Home </a>
-    </div>
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="BootstrapBasics.html">Jumbotron + Button </a>
+      </li>
+      <li>
+        <a href="BootstrapBasics-Row-Col.html"> Rows and Cols </a>
+      </li>
+      <li>
+        <a href="#"> Page 3 </a>
+      </li>
+      <li>
+        <a href="#"> Page 4 </a>
+      </li>
+
+    </ul>
+
   </div>
 </nav>
 
 <body>
 
 
-<div class = "container">
+  <div class="container">
 
-<!-- Jumbotron helps extend to the entire viewport. -->
-<div class = "jumbotron">
-  
-    <h2> Jumbotrons </h2> <hr>
+    <!-- Jumbotron helps extend to the entire viewport. -->
+    <div class="jumbotron">
 
-<p>
-  This paragraph in encased within a "jumbotron" div class. Following this paragraph are some buttons using different button classes
-</p>
+      <h2> Jumbotrons </h2>
+      <hr>
 
-<!-- These are different buttons with different styles based on their class -->
-<p>
-    <!-- It's better to use buttons instead of links to be buttons -->
+      <p>
+        This paragraph in encased within a "jumbotron" div class. Following this paragraph are some buttons using different button
+        classes
+      </p>
 
-    <!-- Hyperlink Button -->
-  <a href = "" class = "btn btn-default btn-lg" role = "button"> lg-More Info </a>
+      <!-- These are different buttons with different styles based on their class -->
+      <p>
+        <!-- It's better to use buttons instead of links to be buttons -->
 
-  <!-- Button type Danger Button -->
-  <button type = "submit" class = "btn btn-danger" role = "button"> def-Button </button>
+        <!-- Hyperlink Button -->
+        <a href="" class="btn btn-default btn-lg" role="button"> lg-More Info </a>
 
-  <!-- Default button size input type Button -->
-  <input type = "button" value = "def-Info" class = "btn btn-info">
+        <!-- Button type Danger Button -->
+        <button type="submit" class="btn btn-danger" role="button"> def-Button </button>
 
-  <!-- Small Primary Button -->
-  <button type = "submit" class = "btn-primary btn-sm" > sm-Primary </button>
+        <!-- Default button size input type Button -->
+        <input type="button" value="def-Info" class="btn btn-info">
 
-  <!-- Extra small Success Button -->
-  <button type = "submit" class = "btn btn-success btn-xs" > xs-Success </button>
+        <!-- Small Primary Button -->
+        <button type="submit" class="btn-primary btn-sm"> sm-Primary </button>
 
-  <!-- Large Warning button -->
-  <button type = "submit" class = "btn btn-warning btn-lg" > lg-Warning </button>
+        <!-- Extra small Success Button -->
+        <button type="submit" class="btn btn-success btn-xs"> xs-Success </button>
 
-  <!-- Large Button Link -->
-  <button type = "submit" class = "btn btn-link btn-lg" > lg-Link </button>
+        <!-- Large Warning button -->
+        <button type="submit" class="btn btn-warning btn-lg"> lg-Warning </button>
 
-  <!-- Disabled Buttons -->
-  <button type = "button" class = "btn btn-lg btn-primary" disabled = "disabled" > dis-lg-Primary </button>
-  <a href = "#" class = "btn btn-default btn-lg disabled" role = "button" > dis-Link</a>
+        <!-- Large Button Link -->
+        <button type="submit" class="btn btn-link btn-lg"> lg-Link </button>
 
-  <!-- Buttons groups -->
-  <div class = "btn-group btn-group-lg" role = "group">
+        <!-- Disabled Buttons -->
+        <button type="button" class="btn btn-lg btn-primary" disabled="disabled"> dis-lg-Primary </button>
+        <a href="#" class="btn btn-default btn-lg disabled" role="button"> dis-Link</a>
 
-    <button type = "button" class = "btn btn-default" > Small </button>
-    <button type = "button" class = "btn btn-default" > Medium </button>
-    <button type = "button" class = "btn btn-default" > Large </button>
+        <!-- Buttons groups -->
+        <div class="btn-group btn-group-lg" role="group">
 
+          <button type="button" class="btn btn-default"> Small </button>
+          <button type="button" class="btn btn-default"> Medium </button>
+          <button type="button" class="btn btn-default"> Large </button>
+
+        </div>
+      </p>
+    </div>
+
+    <!-- Source: https://getbootstrap.com/docs/4.0/components/jumbotron/ -->
+    <div class="jumbotron">
+      <h1 class="display-4">Hello, world!</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+
+      <!-- Creates a line indicating thematic change -->
+      <hr class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </p>
+    </div>
   </div>
-</p>
-</div>
 
-<!-- Source: https://getbootstrap.com/docs/4.0/components/jumbotron/ -->
-<div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        
-        <!-- Creates a line indicating thematic change -->
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </p>
-      </div>
-  </div>
-
-<!-- <div class = "container">
+  <!-- <div class = "container">
     <h1> Grid System </h1>
     <hr>
 </div>
@@ -118,8 +143,19 @@
 
 <div class = "container" -->
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
 
 </body>
+
+<footer class="page-footer">
+  <div class="container text-right ">
+    <h2>
+      <small>Alan Sisouphone</small>
+    </h2>
+  </div>
+</footer>
+
 </html>
