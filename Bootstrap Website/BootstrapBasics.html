@@ -22,19 +22,36 @@
 </style>
 
 
+    <!-- Learning from Derek Banas on Youtube "Boostrap Tutorial" -->
+    <!-- Provides padding. Fluid will fill the screen -->
+    <div class = "container">
+
+        <!-- <div class = "page-header"> -->
+          <h1>Learning Bootstrap 3.3.7 <p><small> Jumbotron and Buttons </small></p</h1>
+        <!-- </div> -->
+        </div>
 
 </head>
+
+
+<nav class = "navbar navbar-default">
+  <div class = "container">
+    <div class = "navbar-header">
+      <a class = "navbar-brand" href = "#" > Home </a>
+    </div>
+  </div>
+</nav>
+
 <body>
 
-    <!-- Learning from Derek Banas on Youtube "Boostrap Tutorial" -->
-<div class = "container">
 
-<div class = "page-header">
-  <h1>Learning Bootstrap 3.3.7</h1>
-</div>
+<div class = "container">
 
 <!-- Jumbotron helps extend to the entire viewport. -->
 <div class = "jumbotron">
+  
+    <h2> Jumbotrons </h2> <hr>
+
 <p>
   This paragraph in encased within a "jumbotron" div class. Following this paragraph are some buttons using different button classes
 </p>
@@ -64,12 +81,19 @@
   <!-- Large Button Link -->
   <button type = "submit" class = "btn btn-link btn-lg" > lg-Link </button>
 
+  <!-- Disabled Buttons -->
+  <button type = "button" class = "btn btn-lg btn-primary" disabled = "disabled" > dis-lg-Primary </button>
+  <a href = "#" class = "btn btn-default btn-lg disabled" role = "button" > dis-Link</a>
 
+  <!-- Buttons groups -->
+  <div class = "btn-group btn-group-lg" role = "group">
+
+    <button type = "button" class = "btn btn-default" > Small </button>
+    <button type = "button" class = "btn btn-default" > Medium </button>
+    <button type = "button" class = "btn btn-default" > Large </button>
+
+  </div>
 </p>
-
-
-
-
 </div>
 
 <!-- Source: https://getbootstrap.com/docs/4.0/components/jumbotron/ -->
@@ -84,9 +108,15 @@
           <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
         </p>
       </div>
+  </div>
 
+<!-- <div class = "container">
+    <h1> Grid System </h1>
+    <hr>
 </div>
 
+
+<div class = "container" -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
