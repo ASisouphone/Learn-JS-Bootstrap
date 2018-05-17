@@ -4,10 +4,19 @@ var app1 = angular.module('app1', []);
 
 
 app1.controller('ctrl1', function($scope) {
-    $scope.numA = 1;
-    $scope.numB = 1;
+    $scope.numA = null;
+    $scope.numB = null;
 
     $scope.updateValue = function() {
         $scope.sum = $scope.numA + ' + ' + $scope.numB + " = " + (+ $scope.numA + +$scope.numB)
+    };
+});
+
+
+app1.controller('randCtrl', function($scope) {
+    $scope.randNum = Math.floor((Math.random() * 10) + 1);
+
+    $scope.updateRand = function() {
+        $scope.randNum = Math.floor((Math.random() * 10) + 1);
     };
 });
