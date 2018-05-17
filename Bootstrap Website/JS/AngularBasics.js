@@ -20,3 +20,9 @@ app1.controller('randCtrl', function($scope) {
         $scope.randNum = Math.floor((Math.random() * 10) + 1);
     };
 });
+
+app1.controller('grocCtrl', function($scope) {
+    $scope.grocList = []
+    $scope.item = null;
+
+});
