@@ -96,12 +96,16 @@
             <div class = "col-xs-6">
                 <div class = "form-group">
                     <h2> Grocery list size: <span ng-bind = "grocList.length"> </span></span></h2>
-                    <input = "text" ng-model = "grocList[$index]" class = "form-control" placeholder="Grocery Item">
+                    <input = "text" ng-model = "inputValue" class = "form-control" placeholder="Grocery Item">
                 </div>
                 <div class = "form-group">
-                        <button class = "btn btn-primary" ng-click="grocList.push(item)">Add Item</button>
+                        <button class = "btn btn-primary" ng-click="grocList.push(inputValue)">Add Item</button>
                         <button class="btn btn-danger" ng-click = "grocList = []">Clear</button>
                 </div>
+                {{grocList}}
+                <ol>
+                    <li ng-repeat="i in grocList"> {{i}}</li>
+                </ol>
             </div>
         </div>
     </div>

@@ -23,6 +23,5 @@ app1.controller('randCtrl', function($scope) {
 
 app1.controller('grocCtrl', function($scope) {
     $scope.grocList = []
-    $scope.item = null;
 
 });
